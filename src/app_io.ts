@@ -16,8 +16,6 @@ export const app = Fastify({
   //日志
   logger: false
 })
-
-console.log(app)
 app.register(fastifyRedis, { host: '127.0.0.1' })
 
 app.register(fastifyIo, {
